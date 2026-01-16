@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <style>
+    body {font-family: Arial; background: #f8f9fa; padding: 30px;}
+    .container {max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc;}
+    h2 {text-align: center;}
+    label {display: block; margin-top: 10px;}
+    input {width: 100%; padding: 8px; margin-top: 5px;}
+    .btns {display: flex; justify-content: space-between; margin-top: 15px;}
+    button {padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer;}
+    .confirm {background: #28a745; color: white;}
+    .prev {background: #6c757d; color: white;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Payment Details</h2>
+    <label>Card Number:</label>
+    <input type="text" maxlength="16" required>
+
+    <label>Expiry Date:</label>
+    <input type="month" required>
+
+    <label>CVV:</label>
+    <input type="password" maxlength="3" required>
+
+    <div class="btns">
+      <button type="button" class="prev" onclick="window.location.href='personal.html'">Back</button>
+      <button type="button" class="confirm" onclick="alert('Registration Successful!')">Confirm</button>
+    </div>
+  </div>
+</body>
+</html>
